@@ -1,27 +1,105 @@
-# TsStart
+# TS Start
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+## Set up:
 
-## Development server
+```
+npm i
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Functionality in box:
 
-## Code scaffolding
+#### Store
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- NGRX
+- NGRX Effects
+- NGRX Local Storage
 
-## Build
+#### Code Quality
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Linter
+- Prettier
+- Husky
 
-## Running unit tests
+#### Git Actions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Build
+- Linter
+- Prettier
+- Unit Tests
+- Unit Tests coverage
 
-## Running end-to-end tests
+## Architecture Concept:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+> ## Component Type [CMT]
+>
+> #### - component.html
+>
+> #### - component.scss
+>
+> #### - component.spec.ts
+>
+> #### - component.ts
 
-## Further help
+> ## Wrapper Type [WT]
+>
+> #### components CMT [ ]
+>
+> #### container CMT
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+> ## Core Type [CT]
+>
+> #### types [Files]
+>
+> #### services [Files]
+>
+> #### pipes [Files]
+>
+> #### directives [Files]
+>
+> #### mocks [Files]
+
+> ## Layout Type [LT]
+>
+> #### core CMT [ ]
+>
+> #### elements CMT | WT [ ]
+
+> ## Store Type [ST]
+>
+> #### actions [Files]
+>
+> #### facades [Files]
+>
+> #### reducers [Files]
+>
+> #### selectors [Files]
+>
+> #### effects [Files]
+
+> ## Page Type [PT]
+>
+> #### container CMT
+>
+> #### components CMT | WT [ ]
+>
+> #### children PT [ ]
+>
+> #### core CT
+>
+> #### store ST
+
+> ## Module Type [MT]
+>
+> #### container CMT
+>
+> #### layout LT
+>
+> #### components CMT | WT [ ]
+>
+> #### modules MT [ ]
+>
+> #### pages PT [ ]
+>
+> #### core CT
+>
+> #### store ST
