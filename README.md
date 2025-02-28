@@ -30,21 +30,33 @@ npm i
 
 ## Architecture Concept:
 
-> ## Component Type [CMT]
->
-> #### - component.html
->
-> #### - component.scss
->
-> #### - component.spec.ts
->
-> #### - component.ts
-
-> ## Wrapper Type [WT]
->
-> #### components CMT [ ]
+> ## Module Type [MT]
 >
 > #### container CMT
+>
+> #### layout LT
+>
+> #### components CMT | WT [ ]
+>
+> #### modules MT [ ]
+>
+> #### pages PT [ ]
+>
+> #### core CT
+>
+> #### store ST[]
+
+> ## Page Type [PT]
+>
+> #### container CMT
+>
+> #### components CMT | WT [ ]
+>
+> #### children PT [ ]
+>
+> #### core CT
+>
+> #### store ST
 
 > ## Core Type [CT]
 >
@@ -64,42 +76,30 @@ npm i
 >
 > #### elements CMT | WT [ ]
 
+> ## Wrapper Type [WT]
+>
+> #### components CMT [ ]
+>
+> #### container CMT
+
 > ## Store Type [ST]
 >
-> #### actions [Files]
+> #### actions.ts
 >
-> #### facades [Files]
+> #### facades.ts
 >
-> #### reducers [Files]
+> #### reducers.ts
 >
-> #### selectors [Files]
+> #### selectors.ts
 >
-> #### effects [Files]
+> #### effects.ts
 
-> ## Page Type [PT]
+> ## Component Type [CMT]
 >
-> #### container CMT
+> #### - component.html
 >
-> #### components CMT | WT [ ]
+> #### - component.scss
 >
-> #### children PT [ ]
+> #### - component.spec.ts
 >
-> #### core CT
->
-> #### store ST
-
-> ## Module Type [MT]
->
-> #### container CMT
->
-> #### layout LT
->
-> #### components CMT | WT [ ]
->
-> #### modules MT [ ]
->
-> #### pages PT [ ]
->
-> #### core CT
->
-> #### store ST
+> #### - component.ts

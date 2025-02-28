@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { BaseFacade } from '../store/base.facade';
+import { BaseFacade } from '../store/base/base.facade';
 
 @Component({
   selector: 'app-root',

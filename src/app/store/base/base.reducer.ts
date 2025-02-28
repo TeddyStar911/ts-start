@@ -1,6 +1,6 @@
 import { createReducer, on } from '@ngrx/store';
 import * as BaseAction from './base.actions';
-import { Base } from '../core/interfaces/base.interface';
+import { Base } from '../../core/interfaces/base.interface';
 
 export const BASE_FEATURE_KEY = 'base';
 

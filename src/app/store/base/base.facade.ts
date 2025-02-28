@@ -4,7 +4,7 @@ import * as fromBase from './base.reducer';
 import * as BaseActions from './base.actions';
 import { baseQuery } from './base.selector';
 import { Observable } from 'rxjs';
-import { Base } from '../core/interfaces/base.interface';
+import { Base } from '../../core/interfaces/base.interface';
 
 @Injectable()
 export class BaseFacade {

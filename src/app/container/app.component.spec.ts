@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { BaseFacade } from '../store/base.facade';
+import { BaseFacade } from '../store/base/base.facade';
 import { provideMockStore } from '@ngrx/store/testing';
 import { of } from 'rxjs';
 
