@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BaseFacade } from '../store/base/base.facade';
 
@@ -10,10 +10,14 @@ import { BaseFacade } from '../store/base/base.facade';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   constructor(private baseFacade: BaseFacade) {}
 
+  /* ====
   ngOnInit(): void {
+
+    Example How to call data from facade
+
     this.baseFacade.setHome();
     this.baseFacade.loadBaseItems();
     this.baseFacade.base$.subscribe((res) => console.log(res, 'Base'));
@@ -21,4 +25,5 @@ export class AppComponent implements OnInit {
       console.log(res, 'Base Items'),
     );
   }
+  === */
 }
