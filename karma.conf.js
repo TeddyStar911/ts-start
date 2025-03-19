@@ -21,12 +21,20 @@ module.exports = function (config) {
       },
     },
     jasmineHtmlReporter: {
-      suppressAll: true, // removes the duplicated traces
+      suppressAll: true,
     },
     coverageReporter: {
       dir: require("path").join(__dirname, "./coverage/ts-start"),
       subdir: ".",
       reporters: [{ type: "html" }, { type: "text-summary" }],
+      check: {
+        global: {
+          statements: 10,
+          branches: 10,
+          functions: 10,
+          lines: 10,
+        },
+      },
     },
     reporters: ["progress", "kjhtml"],
     browsers: ["ChromeHeadlessNoSandbox"],

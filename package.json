@@ -7,9 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
+    "test-coverage": "ng test --no-watch --code-coverage --no-progress --browsers=ChromeHeadless",
     "lint": "ng lint",
     "serve:ssr:ts-start": "node dist/ts-start/server/server.mjs",
-    "prepare": "npm run build --if-present && npm run lint && npx prettier --write . && npm run test --no-watch --no-progress --browsers=ChromeHeadless"
+    "prepare": "npm run build --if-present && npm run lint && npx prettier --write . && npm run test-coverage"
   },
   "husky": {
     "hooks": {
